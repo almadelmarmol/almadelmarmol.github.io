@@ -2,171 +2,220 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Mármol Haus</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mármol Haus | Diseño en piedra y decoración premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
-    color: white;
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0e0e0e;
+color:white;
 }
 
-header {
-    text-align: center;
-    padding: 40px;
-    background: linear-gradient(black, #1a1a1a);
+h1,h2{
+font-family:'Playfair Display',serif;
 }
 
-h1 {
-    margin: 0;
-    font-size: 40px;
+header{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.9);
+padding:10px;
+text-align:center;
+z-index:1000;
 }
 
-p {
-    color: #ccc;
+header a{
+color:gold;
+margin:0 8px;
+text-decoration:none;
+font-size:13px;
 }
 
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    padding: 30px;
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
 
-.producto {
-    background: #1a1a1a;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    transition: 0.3s;
+.btn{
+background:gold;
+color:black;
+padding:10px 20px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
 }
 
-.producto:hover {
-    transform: scale(1.03);
+section{
+padding:60px 20px;
+text-align:center;
 }
 
-.producto img {
-    width: 100%;
-    border-radius: 10px;
+.buscador input{
+width:60%;
+padding:10px;
 }
 
-.producto h2 {
-    margin: 15px 0 10px;
+.productos{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
 }
 
-.producto p {
-    font-size: 14px;
-    line-height: 1.5;
+.producto{
+background:#1a1a1a;
+margin:15px;
+padding:15px;
+border-radius:10px;
+width:250px;
 }
 
-.boton {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: gold;
-    color: black;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+.producto img{
+width:100%;
+border-radius:10px;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    color: #888;
+.estado.disponible{color:#00ff88;}
+.estado.pedido{color:orange;}
+.estado.agotado{color:red;}
+
+footer{
+background:#000;
+padding:30px;
 }
+
+@media(max-width:768px){
+.productos{flex-direction:column;align-items:center;}
+.buscador input{width:90%;}
+}
+
 </style>
-
 </head>
 
 <body>
 
 <header>
-    <h1>Alma del Mármol</h1>
-    <p>Diseños exclusivos en mármol y ónix. Fabricación artesanal, elegancia y durabilidad en cada pieza.</p>
+<a href="#">Inicio</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#catalogo">Catálogo</a>
+<a href="#contacto">Contacto</a>
 </header>
 
-<div class="galeria">
-
-<div class="producto">
-    <img src="MESA ONIX ILUMINADA.jpg">
-    <h2>Mesa de ónix iluminada</h2>
-    <p>Mesa artesanal en ónix natural con iluminación integrada que resalta sus vetas. Pieza exclusiva para espacios elegantes.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
+<section class="hero">
+<div>
+<h1>Mármol Haus</h1>
+<p>Elegancia en piedra, diseño que trasciende</p>
+<a href="#catalogo" class="btn">Ver catálogo</a>
 </div>
+</section>
 
-<div class="producto">
-    <img src="MESA COMEDOR DE MARMOL CON ESTRUCTURA ROBUSTA.jpg">
-    <h2>Mesa comedor de mármol</h2>
-    <p>Mesa robusta con diseño moderno y acabado pulido. Ideal para comedores de alto nivel.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<section id="nosotros">
+<h2>Quiénes somos</h2>
+<p>Fabricamos piezas exclusivas en mármol y ónix para espacios elegantes.</p>
+</section>
 
-<div class="producto">
-    <img src="LAVABO COMPACTO CON REPISAS COLOR BEIGE MARMOL.jpg">
-    <h2>Lavabo compacto beige</h2>
-    <p>Lavabo funcional con repisas integradas, diseño elegante y acabado natural.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<section class="buscador">
+<input type="text" id="buscador" placeholder="Buscar por nombre o código...">
+</section>
 
-<div class="producto">
-    <img src="LAVABO MODERNO CON REPISAS CURVAS.jpg">
-    <h2>Lavabo moderno curvo</h2>
-    <p>Diseño contemporáneo con líneas suaves y repisas funcionales. Ideal para baños modernos.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<section id="catalogo">
 
-<div class="producto">
-    <img src="LAVABO NEGRO CON ACABADO PREMIUM MARMOL.jpg">
-    <h2>Lavabo negro premium</h2>
-    <p>Pieza elegante en mármol negro con acabado pulido de alta calidad.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<!-- 🔽 CATEGORÍAS -->
 
-<div class="producto">
-    <img src="LAVABO RECTANGULAR BEIGE NEGRO CON BASE INTEGRADA.jpg">
-    <h2>Lavabo rectangular</h2>
-    <p>Diseño moderno con contraste de tonos, ideal para espacios sofisticados.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<h2>Juegos de mesa</h2>
+<div class="productos"></div>
 
-<div class="producto">
-    <img src="CUADRO DECORATIVO DE MARMOL ULTIMA CENA.jpg">
-    <h2>Cuadro decorativo Última Cena</h2>
-    <p>Arte tallado en mármol con diseño clásico, pieza única de gran impacto visual.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<h2>Espejos</h2>
+<div class="productos"></div>
 
-<div class="producto">
-    <img src="RELOJ DECORATIVO EN MARMOL MOTOCICLETA.jpg">
-    <h2>Reloj decorativo motocicleta</h2>
-    <p>Reloj en mármol con diseño artístico para amantes del estilo moderno.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
-</div>
+<h2>Adornos para el hogar</h2>
+<div class="productos"></div>
 
-<div class="producto">
-    <img src="RELOJ EN MARMOL CALENDARIO AZTECA.jpg">
-    <h2>Reloj calendario azteca</h2>
-    <p>Pieza artesanal con diseño cultural, mezcla de tradición y elegancia.</p>
-    <p style="color: gold; font-size: 13px;">Pieza disponible bajo pedido</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Solicitar precio</a>
+<h2>Mesas</h2>
+<div class="productos"></div>
+
+<h2>Baños</h2>
+<div class="productos"></div>
+
+<h2>Corazones</h2>
+<div class="productos"></div>
+
+<h2>Joyas</h2>
+<div class="productos"></div>
+
+<h2>Cuadros</h2>
+<div class="productos"></div>
+
+<h2>Urnas cinerarias</h2>
+<div class="productos"></div>
+
+<h2>Lámparas</h2>
+<div class="productos">
+
+<div class="producto" data-nombre="Lampara marmol negro" data-codigo="LAM-001">
+<img src="https://images.unsplash.com/photo-1582582494700-0b49d6b2c02d">
+<h3>Lámpara Mármol Negro</h3>
+<p>Código: LAM-001</p>
+<p class="estado disponible">Disponible</p>
+<a class="btn" href="https://wa.me/521XXXXXXXXXX?text=Hola,%20quiero%20información%20del%20LAM-001">Solicitar</a>
 </div>
 
 </div>
+
+<h2>Lavabos</h2>
+<div class="productos"></div>
+
+<h2>Relojes</h2>
+<div class="productos"></div>
+
+<h2>Fuentes</h2>
+<div class="productos"></div>
+
+<h2>Arte religioso</h2>
+<div class="productos"></div>
+
+<h2>Cocina</h2>
+<div class="productos"></div>
+
+</section>
+
+<section id="contacto">
+<h2>Atención a clientes</h2>
+<p>WhatsApp: 55XXXXXXXX</p>
+</section>
 
 <footer>
-    <p>¿Buscas un diseño personalizado?</p>
-    <a class="boton" href="https://wa.me/522292422760" target="_blank">Contáctanos por WhatsApp</a>
+<p>Mármol Haus © 2026</p>
 </footer>
+
+<script>
+const buscador=document.getElementById("buscador");
+
+buscador.addEventListener("keyup",function(){
+let texto=buscador.value.toLowerCase();
+
+document.querySelectorAll(".producto").forEach(prod=>{
+let nombre=prod.dataset.nombre.toLowerCase();
+let codigo=prod.dataset.codigo.toLowerCase();
+
+if(nombre.includes(texto)||codigo.includes(texto)){
+prod.style.display="block";
+}else{
+prod.style.display="none";
+}
+});
+});
+</script>
 
 </body>
 </html>

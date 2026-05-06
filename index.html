@@ -3,144 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mármol Haus | Catálogo</title>
+
+<title>Mármol Haus | Diseño en piedra y decoración premium</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
-body{margin:0;font-family:Arial;background:#0e0e0e;color:white;}
-h1,h2{text-align:center;}
-header{background:black;padding:10px;text-align:center;}
-header a{color:gold;margin:10px;text-decoration:none;}
-.hero{height:60vh;display:flex;justify-content:center;align-items:center;background:#111;}
-.btn{background:gold;color:black;padding:8px;text-decoration:none;display:inline-block;margin-top:10px;}
-.productos{display:flex;flex-wrap:wrap;justify-content:center;}
-.producto{background:#1a1a1a;margin:10px;padding:10px;border-radius:10px;width:220px;}
-.producto img{width:100%;border-radius:10px;}
-.estado.disponible{color:#00ff88;}
-.estado.pedido{color:orange;}
-.estado.agotado{color:red;}
-</style>
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#0e0e0e;
+color:white;
+}
 
-</head>
+h1,h2{
+font-family:'Playfair Display',serif;
+}
 
-<body>
+header{
+position:fixed;
+width:100%;
+top:0;
+background:rgba(0,0,0,0.9);
+padding:10px;
+text-align:center;
+z-index:1000;
+}
 
-<header>
-<a href="#">Inicio</a>
-<a href="#catalogo">Catálogo</a>
-<a href="#contacto">Contacto</a>
-</header>
+header a{
+color:gold;
+margin:0 8px;
+text-decoration:none;
+font-size:13px;
+}
 
-<section class="hero">
-<div>
-<h1>Mármol Haus</h1>
-<p>Diseño en piedra y decoración premium</p>
-</div>
-</section>
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
 
-<section id="catalogo">
+.btn{
+background:gold;
+color:black;
+padding:10px 20px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+}
 
-<h2>Mesas</h2>
-<div class="productos">
-
-<div class="producto" data-nombre="Mesa 1" data-codigo="MES-001">
-<img src="MES-001.jpg">
-<h3>Mesa Mármol</h3>
-<p>Código: MES-001</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20MES-001">Solicitar</a>
-</div>
-
-<div class="producto" data-nombre="Mesa 2" data-codigo="MES-002">
-<img src="MES-002.jpg">
-<h3>Mesa Mármol</h3>
-<p>Código: MES-002</p>
-<p class="estado pedido">Sobre pedido</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20MES-002">Solicitar</a>
-</div>
-
-</div>
-
-<h2>Lavabos</h2>
-<div class="productos">
-
-<div class="producto" data-codigo="LAV-001">
-<img src="LAV-001.jpg">
-<h3>Lavabo</h3>
-<p>Código: LAV-001</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20LAV-001">Solicitar</a>
-</div>
-
-<div class="producto">
-<img src="LAV-002.jpg">
-<h3>Lavabo</h3>
-<p>Código: LAV-002</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20LAV-002">Solicitar</a>
-</div>
-
-<div class="producto">
-<img src="LAV-003.jpg">
-<h3>Lavabo</h3>
-<p>Código: LAV-003</p>
-<p class="estado pedido">Sobre pedido</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20LAV-003">Solicitar</a>
-</div>
-
-<div class="producto">
-<img src="LAV-004.jpg">
-<h3>Lavabo</h3>
-<p>Código: LAV-004</p>
-<p class="estado pedido">Sobre pedido</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20LAV-004">Solicitar</a>
-</div>
-
-</div>
-
-<h2>Relojes</h2>
-<div class="productos">
-
-<div class="producto">
-<img src="REL-001.jpg">
-<h3>Reloj</h3>
-<p>Código: REL-001</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20REL-001">Solicitar</a>
-</div>
-
-<div class="producto">
-<img src="REL-002.jpg">
-<h3>Reloj</h3>
-<p>Código: REL-002</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20REL-002">Solicitar</a>
-</div>
-
-</div>
-
-<h2>Cuadros</h2>
-<div class="productos">
-
-<div class="producto">
-<img src="CUA-001.jpg">
-<h3>Cuadro</h3>
-<p>Código: CUA-001</p>
-<p class="estado disponible">Disponible</p>
-<a class="btn" href="https://wa.me/522291401824?text=Quiero%20CUA-001">Solicitar</a>
-</div>
-
-</div>
-
-</section>
-
-<section id="contacto">
-<h2>Atención a clientes</h2>
-<p>WhatsApp y llamadas: +52 229 140 1824</p>
-</section>
-
-<script>
-const buscador=document.getElementById("buscador");
-</script>
-
-</body>
-</html>
+section{
+padding:60px 20px;
